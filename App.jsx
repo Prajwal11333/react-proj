@@ -1,17 +1,17 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
+import Header from "./src/components/Header";
+import Footer from "./src/components/Footer";
+import Home from "./src/components/Home"
 import Basics from "./pages/Tutorials/Basics";
 import FamilySigns from "./pages/Tutorials/FamilySigns";
 import EmotionsExpressions from "./pages/Tutorials/EmotionsExpressions";
 import Quiz from "./pages/Quiz";
 import AboutUs from "./pages/AboutUs";
 import Login from "./pages/Login";
-import React from "react";
+import "./styles/App.css";
 
-const element = ReactDom.createRoot(document.getElementbyId('root'));
- function App() {
+function App() {
   return (
     <>
       <Header />
@@ -29,4 +29,4 @@ const element = ReactDom.createRoot(document.getElementbyId('root'));
   );
 }
 
-element.render(<App></App>)
+export default App;
